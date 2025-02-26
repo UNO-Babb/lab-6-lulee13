@@ -10,7 +10,7 @@ def main():
   #Create two dice values ranging from 1 - 6 each
   roll = 0
   while roll <= 10000:
-    roll = roll + 1
+    roll += 1
     dice1 = random.randint(1,6)
     dice2 = random.randint(1,6)
   #find the sum total of the two dice
@@ -21,7 +21,7 @@ def main():
   spot = 0
   for i in rolls:
     print (str(spot + 1) + ":", rolls[spot], "(" + str(round((rolls[spot]/roll*100), 1)) + "%)") #parentheses gore
-    spot = spot + 1
+    spot += 1
 
 
 if __name__ == '__main__':
